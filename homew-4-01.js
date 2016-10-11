@@ -13,33 +13,48 @@ var main = function()
 
     var $fadeIn_fadeIn = function (  )
     {
-        $contenido.fadeIn(500);
+        $contenido.fadeIn(300);
+
+        $('#bin').removeClass('ena');
+        $('#bin').addClass('disa');
+
+        $('#bout').removeClass('disa');
+        $('#bout').addClass('ena');
     };
 
     var $fadeOut_fadeOut = function (  )
     {
-        $contenido.fadeOut(250);
+        $contenido.fadeOut(150);
+
+        $('#bout').removeClass('ena');
+        $('#bout').addClass('disa');
+
+        $('#bin').removeClass('disa');
+        $('#bin').addClass('ena');
     }
 
 
     $("#bin").on("click", function ( event )
     {
         $fadeIn_fadeIn();
-        $('#bin').removeClass('ena');
-        $('#bin').addClass('disa');
-
-        $('#bout').removeClass('disa');
-        $('#bout').addClass('ena');
     });
 
     $("#bout").on("click", function ( event )
     {
         $fadeOut_fadeOut();
-        $('#bout').removeClass('ena');
-        $('#bout').addClass('disa');
+    })
 
-        $('#bin').removeClass('disa');
-        $('#bin').addClass('ena');
+    $("body").on("keypress", function ( event )
+    {
+        console.log(event.keyCode);
+        if(event.keyCode == 73)
+        {
+            $fadeIn_fadeIn();
+        }
+        if(event.keyCode === 79 )
+        {
+            $fadeOut_fadeOut();
+        }
     })
 
 }

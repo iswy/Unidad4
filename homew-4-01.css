@@ -10,12 +10,9 @@ h1
 	padding-left: 32px;
 	padding-top: 64px;
 	padding-bottom: 32px;
-
 	width: 100%;
-
 	background-color:darkslategray;
 	color:whitesmoke;
-
 	font-weight: lighter;
 }
 
@@ -40,12 +37,12 @@ button
 	padding: 24px;
 	margin: 24px;
 	width: 40%;
+	border-radius: 60px;
 }
 button.ena:hover
 {
 	background-color: darkslategray;
 	color: whitesmoke;
-
 	cursor: pointer;
 }
 
@@ -66,6 +63,7 @@ button.ena:hover
 {
 	align-self: center;
 	align-self: center;
+	align-content: center;
 }
 .big
 {
