@@ -11,11 +11,10 @@ var main = function()
 
     $("body").append($contenido);
 
-    $contenido.slideDown(2000);
-
-    $("body").append($masContenido);
-
-    $masContenido.fadeIn();
+    $contenido.slideDown(2000, function(){
+        $("body").append($masContenido);
+        $masContenido.fadeIn();
+    })
 
 }
 
