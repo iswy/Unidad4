@@ -51,7 +51,7 @@ var main = function()
         {
             $fadeIn_fadeIn();
         }
-        if(event.keyCode === 79 )
+        if(event.keyCode == 79 )
         {
             $fadeOut_fadeOut();
         }
